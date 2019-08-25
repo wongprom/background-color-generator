@@ -1,11 +1,17 @@
 {
+  "homepage": "https://wongprom.github.io/background-color-generator",
   "name": "background-generator",
   "version": "1.0.0",
   "description": "Background color generator",
   "main": "script.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jimmy Backstrom Wongprom",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
